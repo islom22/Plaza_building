@@ -1,0 +1,1806 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url(/fonts/NeueMachina-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url(/fonts/NeueMachina-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url(/fonts/NeueMachina-Ultrabold.otf);
+  font-weight: 800;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: hsl(0, 0%, 50%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+:root {
+  --18px: 18px;
+  --20px: 20px;
+  --22px: 22px;
+  --24px: 24px;
+  --32px: 32px;
+
+  --orange: #1878f3;
+  --black: black;
+  --grey: #f5f5f7;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+.title {
+  font-family: "Neue Machina", "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+.mecha {
+  font-family: "Neue Machina", "Inter";
+}
+
+.container {
+  max-width: 1440px !important;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+
+.nav {
+  padding: 26px 0;
+}
+
+.nav__row {
+  align-items: center;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.nav__link a,
+.num a {
+  text-decoration: none;
+  color: unset;
+}
+
+.nav__link a:hover,
+.num a:hover {
+  color: unset;
+}
+
+.num a {
+  font-size: var(--18px);
+  font-weight: 800;
+}
+
+.nav__link a {
+  font-weight: 500;
+  font-size: var(--18px);
+  line-height: 24px;
+  margin-right: 80px;
+}
+
+.nav__link {
+  display: block;
+}
+
+.nav__link:last-child {
+  margin-right: 0;
+}
+
+.num {
+  padding: 0 !important;
+}
+
+.nav__logo {
+  margin-right: 1rem;
+}
+
+/* HOME */
+.home {
+  padding: 60px 0;
+}
+
+.home__video {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home__title-1,
+.home__title-2 {
+  font-family: "Neue Machina", "Inter";
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 88px;
+  text-transform: uppercase;
+}
+
+.home__title-2 {
+  text-align: end;
+}
+
+.home__sub {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  max-width: 340px;
+  font-size: var(--20px);
+}
+
+.home__row {
+  position: relative;
+}
+
+.home__btn {
+  width: 178px;
+  height: 178px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: white;
+  font-weight: 800;
+  position: relative;
+  border: none;
+  z-index: 9;
+}
+.line-btn {
+  width: 178px;
+  height: 178px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: white;
+  font-weight: 800;
+  position: relative;
+  border: none;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line-btn img {
+  display: none;
+}
+.anime--btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--orange);
+  animation: vawe 3s infinite;
+}
+@keyframes vawe {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.home__button {
+  text-align: right;
+}
+
+.home__bottom {
+  margin-top: 24px;
+}
+
+/* ABOUT */
+.about {
+  overflow: hidden;
+  background: var(--black);
+  color: white;
+  padding: 300px 0 88px 0;
+  margin-top: -300px;
+}
+.about__top {
+  align-items: flex-start;
+}
+.lil__title {
+  opacity: 0.6;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.about__title {
+  margin-bottom: var(--32px);
+}
+.about__txt {
+  font-size: var(--20px);
+  line-height: 32px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+.about__word {
+  font-size: var(--22px);
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 0.5rem;
+}
+.about__author {
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--20px);
+  line-height: 32px;
+  color: var(--orange);
+  text-align: right;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 48px;
+  padding-top: 48px;
+}
+.big__num {
+  color: var(--orange);
+  font-family: "Neue Machina", "Inter";
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0;
+}
+.num__txt {
+  font-size: var(--22px);
+  font-weight: 500;
+}
+.about__img {
+  padding: 80px 0;
+}
+.about__pic {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+.flexer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.plus {
+  color: var(--orange);
+  font-family: "Neue Machina", "Inter";
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0;
+}
+/* FAX */
+.facts {
+  overflow: hidden;
+  padding: 80px 0;
+}
+.fax__items {
+  /* max-width: 1320px;
+  margin: 0 auto; */
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+/* .fax__item {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 40px 0;
+  border-top: 1px solid #0d0d0d2a;
+}
+.fax__item:last-child {
+  border-bottom: 1px solid #0d0d0d2a;
+} */
+.item__num {
+  font-family: "Neue Machina", "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--24px);
+  line-height: 32px;
+  opacity: 0.5;
+}
+.item__content {
+  font-size: var(--24px);
+  font-weight: 500;
+}
+.item__content p {
+  margin-bottom: 0;
+}
+/* SERVICES */
+.services {
+  background: var(--black);
+  color: white;
+  padding: 80px 0;
+}
+.serv__item {
+  padding: 64px 32px !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.serv__item:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.serv__txt,
+.serv__num {
+  font-family: "Neue Machina", "Inter";
+  font-size: var(--24px);
+  line-height: 32px;
+  font-weight: 800;
+}
+.serv__num {
+  margin-bottom: 24px;
+}
+/* PROJEKT */
+.projekt {
+  padding: 80px 0;
+  background: var(--black);
+  color: white;
+}
+.projetk__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projekt__item {
+  padding: 12px;
+  position: relative;
+}
+.projekt__item:nth-child(1n) {
+  width: 60%;
+}
+.projekt__item:nth-child(2n) {
+  width: 40%;
+}
+.projekt__item:nth-child(3n) {
+  width: 100%;
+}
+.projekt__img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+  position: relative !important;
+  display: block;
+}
+.projekt__pic {
+  position: relative;
+}
+.projekt__pic::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.projekt__content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-family: "Neue Machina", "Inter";
+  color: white;
+  font-size: var(--24px);
+  font-weight: 800;
+  line-height: 32px;
+}
+.projekt__btn {
+  padding: 40px 0;
+  text-align: center;
+}
+/* ADV */
+.advantages {
+  padding: 80px 0;
+}
+.adv__items {
+  padding: 48px 0;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+}
+.adv__item {
+  width: 100% !important;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+  background: var(--grey);
+}
+.adv__img {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.blue-after::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 56px;
+  height: 56px;
+  background: #dbe9ff;
+  z-index: 1;
+  border-radius: 8px;
+}
+.red-after::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 56px;
+  height: 56px;
+  background: #ffe4de;
+  z-index: 1;
+  border-radius: 8px;
+}
+.green-after::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 56px;
+  height: 56px;
+  background: #dbeee3;
+  z-index: 1;
+  border-radius: 8px;
+}
+.adv__pic {
+  position: relative;
+  z-index: 99;
+}
+.adv__txt {
+  position: relative;
+  z-index: 9;
+  font-size: var(--20px);
+  line-height: 28px;
+  font-weight: 600;
+  font-family: "Neue Machina", "Inter";
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+}
+.adv__item:hover .adv__img {
+  opacity: 1;
+  visibility: visible;
+}
+.adv__sup {
+  font-size: var(--20px);
+  line-height: 28px;
+  font-family: "Neue Machina", "Inter";
+  max-width: 586px;
+}
+.object {
+  padding: 80px 0;
+}
+.object__img {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+  transition: 1s;
+}
+.objectSwiper {
+  padding: 32px 0 0 0 !important;
+  height: 580px;
+}
+.swiper-slide-active .object__img {
+  height: 550px;
+}
+.du-hast {
+  position: relative;
+}
+.btns {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  display: flex;
+  gap: 1.5rem;
+  z-index: 1;
+}
+.swiper {
+  overflow-x: hidden !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  width: 64px !important;
+  height: 64px !important;
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+.arrow {
+  border-radius: 50%;
+}
+.partnersSwiper {
+  padding: 32px 0;
+  height: 450px;
+}
+.part__pic {
+  width: 360px;
+  height: 360px;
+  border: 1px solid #8686862d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partners__logo {
+  max-width: 200px;
+  object-fit: contain;
+}
+/* REVIEWS */
+.reviews {
+  padding: 80px 0;
+  background: var(--black);
+  color: white;
+}
+.slide__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.author {
+  display: flex;
+  align-items: center;
+}
+.person {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.name {
+  font-size: var(--20px);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.status {
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+.company__logo {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+  mix-blend-mode: darken;
+}
+.slide__txt {
+  font-size: var(--20px);
+  line-height: 28px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reviews__slide {
+  height: 350px !important;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.185);
+}
+.item__num p {
+  margin-bottom: 0;
+}
+/* FOOTER */
+.footer {
+  padding: 64px 0;
+}
+.footer a {
+  text-decoration: none;
+  color: unset;
+  transition: 0.3s;
+}
+.footer p {
+  margin-bottom: 0;
+}
+.footer__brand {
+  margin-bottom: 34px;
+}
+.foot__liltitle {
+  font-size: var(--22px);
+  line-height: 32px;
+  font-weight: 600;
+}
+.topp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.con__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}
+.add__item {
+  margin-bottom: 20px;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+.foot__link {
+  margin-bottom: 1rem;
+  display: block;
+}
+.footer__socs {
+  margin-bottom: 38px;
+}
+.soc__title {
+  margin-bottom: 20px !important;
+  display: block;
+  font-weight: 600;
+  font-size: var(--18px);
+}
+.soc {
+  margin-right: 24px;
+}
+.footer__info p {
+  margin-bottom: 1rem;
+}
+.collapse {
+  display: none;
+}
+.home {
+  overflow: hidden;
+}
+.contact {
+  background: var(--black);
+  padding: 56px 0;
+  color: white;
+}
+.form__wrapper {
+  background: #353535;
+  padding: 40px;
+}
+.form__txt {
+  font-size: var(--24px);
+  line-height: 32px;
+  max-width: 50%;
+  margin-bottom: 32px;
+}
+.con__input {
+  margin-bottom: 24px;
+  width: 100%;
+  padding: 20px;
+  background: #464646;
+  border: none;
+  color: white;
+}
+.con__input:focus {
+  outline: none;
+}
+.con__input::placeholder {
+  color: white;
+  font-family: "Neue Machina", "Inter";
+}
+.form__right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.half__input {
+  width: 50%;
+}
+.form__flexer {
+  display: flex;
+  gap: 24px;
+}
+.line-link {
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.line-link:hover {
+  color: white;
+}
+.about-img {
+  margin-bottom: 42px;
+  height: 270px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0px 144px 0px 0px;
+}
+.serv__img img {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+.serv__slide:nth-child(2n) {
+  margin-top: 2rem;
+}
+.serv__slide:nth-child(3n) {
+  margin-top: 4rem;
+}
+.fax__item {
+  border: none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 48px;
+  gap: 1rem;
+  background: var(--grey);
+}
+.item-alt {
+  border-radius: 100px 0px !important;
+}
+.fax__lil-title {
+  font-size: var(--20px);
+  font-weight: 700;
+  margin-bottom: 0.5rem !important;
+  display: block;
+}
+.fax__lil-txt {
+  font-size: var(--18px);
+  line-height: 28px;
+  font-weight: 400;
+}
+.item__logo {
+  margin-bottom: 1rem;
+}
+.item-f {
+  border-radius: 0px 100px;
+}
+.item-t {
+  border-radius: 100px 0px;
+}
+.item-fo {
+  border-radius: 0px 100px;
+  border: none !important;
+}
+.white-brand {
+  display: none;
+}
+.page__top {
+  padding: 60px 0 40px 0;
+  border-bottom: 1px solid #cccccc;
+}
+.round-btn {
+  height: 180px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--orange);
+  color: white;
+  border-radius: 50%;
+  position: relative;
+}
+.round-btn img {
+  display: none;
+}
+.page__title {
+  font-size: 80px;
+  line-height: 88px;
+  font-weight: 800;
+  font-family: "Neue Machina", "Inter";
+  margin-bottom: 1rem;
+}
+.crumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.last__page {
+  font-size: var(--20px);
+  line-height: 28px;
+  color: black;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.last__page:hover {
+  color: var(--orange);
+}
+.this__page {
+  margin: 0;
+  font-size: var(--20px);
+  line-height: 28px;
+  color: var(--orange);
+}
+.page__projekt {
+  background: white;
+}
+.about-img {
+  height: 550px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0;
+  margin-top: 80px;
+}
+.about__page-pic {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+}
+.con__row {
+  padding: 56px 0;
+}
+.content__txt {
+  font-size: var(--20px);
+  line-height: 32px;
+  opacity: 0.8;
+}
+.page__nums {
+  padding: 80px 0 120px 0;
+}
+.banner {
+  background: black;
+  color: white;
+  padding: 144px 0;
+}
+.big__author {
+  text-align: center;
+  color: var(--orange);
+  font-size: var(--20px);
+  font-weight: 500;
+  font-style: italic;
+}
+.big__txt {
+  font-family: "Neue Machina", "Inter";
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.page__banner {
+  margin-bottom: 72px;
+  position: relative;
+}
+.banner__img {
+  position: relative;
+}
+.banner__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.5858718487394958) 35%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.adv__item:nth-child(2n) {
+  margin-top: 2rem;
+}
+.adv__item:nth-child(3n) {
+  margin-top: 4rem;
+}
+.banner__pic {
+  height: 576px;
+  width: 100%;
+  object-fit: cover;
+}
+.banner__content {
+  position: absolute;
+  left: 64px;
+  bottom: 56px;
+}
+.banner__txt {
+  font-size: var(--24px);
+  line-height: 32px;
+  color: white;
+  font-family: "Neue Machina", "Inter";
+  font-weight: 800;
+}
+.page__banners {
+  padding: 4rem 0;
+}
+.map__wrapper {
+  padding: 120px 0;
+}
+.map__info {
+  width: 100%;
+  max-width: 500px;
+  padding: 32px;
+  background: var(--grey);
+  margin-top: -10%;
+  position: relative;
+  z-index: 999;
+}
+.info__lil-title {
+  font-size: var(--18px);
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+.info__txt {
+  font-size: var(--22px);
+  line-height: 32px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+.langs {
+  position: relative;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.hidden__lang {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  padding: 1rem;
+  border: 1px solid var(--orange);
+  border-radius: 0 10px 0 0;
+}
+.langs:hover .hidden__lang {
+  opacity: 1;
+  visibility: visible;
+}
+.current__lang,
+.next__lang {
+  text-decoration: none;
+  color: black;
+  font-size: var(--20px);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.current__lang:hover,
+.next__lang:hover {
+  color: black;
+}
+.current__lang i {
+  transition: 0.3s;
+  color: var(--orange);
+}
+.langs:hover .current__lang i {
+  transform: rotate(180deg);
+}
+.inner__content {
+  padding: 48px 0 120px 0;
+}
+.inner__page-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+  margin-bottom: 2rem;
+  font-family: "Neue Machina", "Inter";
+}
+.inner__content p {
+  font-size: var(--20px);
+  line-height: 32px;
+  opacity: 0.8;
+}
+.inner__slider {
+  padding-top: 2rem;
+}
+.flex__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.video__block {
+  padding-top: 64px;
+}
+.inner__video {
+  width: 100%;
+  height: 576px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+  .nav__link a {
+    margin-right: 32px;
+  }
+}
+@media screen and (max-width: 852px) {
+  .inner__video {
+    height: 240px;
+  }
+  .inner__content {
+    order: 0;
+    padding-bottom: 2rem;
+  }
+  .inner__slider {
+    order: 1;
+  }
+  .inner__page-title {
+    font-size: var(--20px);
+    font-weight: 800;
+    line-height: 28px;
+    margin-bottom: 2rem;
+  }
+  .inner__content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .crumbs {
+    align-items: flex-start;
+  }
+  .long-swiper {
+    height: 300px !important;
+  }
+  .round-btn {
+    height: initial;
+    width: initial;
+    background: transparent;
+    color: var(--orange);
+  }
+  .round-btn img {
+    display: block;
+  }
+  .map__wrapper {
+    padding: 2rem 0;
+  }
+  .map__info {
+    margin-top: 1rem;
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .map__body {
+    height: 360px !important;
+  }
+  .last__page,
+  .this__page {
+    font-size: var(--18px);
+  }
+  .adv__item:nth-child(2n) {
+    margin-top: 0;
+  }
+  .adv__item:nth-child(3n) {
+    margin-top: 0;
+  }
+  .banner__pic {
+    height: 240px;
+  }
+  .banner__content {
+    bottom: 12px;
+    left: 1rem;
+  }
+  .banner__txt {
+    font-size: var(--18px);
+    margin-bottom: 0;
+  }
+  .page__banner {
+    margin-bottom: 32px;
+  }
+  .about__page-img {
+    padding: 0 1rem;
+  }
+  .page__nums,
+  .page__content,
+  .banner {
+    background: var(--black);
+    color: white;
+    padding: 32px 0;
+  }
+  .about__page-pic {
+    height: 272px;
+    border-radius: 0px 144px 0px 0px;
+  }
+  .page__title {
+    font-size: var(--32px);
+    line-height: 150%;
+  }
+  .num-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0.5rem;
+  }
+  .big__txt {
+    font-size: var(--20px);
+    line-height: 32px;
+    font-weight: 600;
+  }
+  .big__author {
+    font-size: var(--18px);
+  }
+  .num__item {
+    padding: 0 !important;
+  }
+  .fax__item {
+    padding: 24px 35px 24px 48px;
+  }
+  .fax__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item-s {
+    border-radius: 100px 0px 0px 100px !important;
+  }
+  .blue-brand {
+    display: none;
+  }
+  .white-brand {
+    display: block;
+  }
+  .scroll-header .blue-brand {
+    display: block;
+  }
+  .scroll-header .white-brand {
+    display: none;
+  }
+  .nav {
+    background: transparent;
+    padding-bottom: 0;
+    transition: 0.3s;
+  }
+  .scroll-header {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.1);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.1);
+    background: white;
+    color: black;
+  }
+  .scroll-header .collapser,
+  .scroll-header .collapser::after,
+  .scroll-header .collapser::before {
+    background: black;
+  }
+  .heavy {
+    padding: 0;
+  }
+  .nav__links {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    z-index: 999;
+  }
+  .nav__link {
+    margin-bottom: 1rem;
+  }
+  .nav__link a {
+    margin-right: 0;
+    font-size: var(--24px);
+  }
+  .nav__brand {
+    width: 40% !important;
+  }
+  .num {
+    width: 40% !important;
+  }
+  .nav__logo {
+    display: none;
+  }
+  .links {
+    width: 0 !important;
+    padding: 0 !important;
+  }
+  .num {
+    display: none;
+  }
+  .nav__row {
+    justify-content: space-between;
+  }
+  .home__button {
+    display: none;
+  }
+
+  .collapse {
+    display: flex !important;
+    width: 20% !important;
+    justify-content: flex-end;
+    z-index: 9999;
+  }
+  .collapse {
+    display: flex !important;
+    width: 20% !important;
+    justify-content: flex-end;
+    z-index: 9999;
+  }
+  .collapser {
+    height: 2px;
+    width: 30px;
+    background: white;
+    position: relative;
+  }
+  .collapser::after {
+    content: "";
+    top: 10px;
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background: white;
+    transition: transform 0.3s;
+  }
+  .collapser::before {
+    content: "";
+    bottom: 10px;
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background: white;
+    transition: transform 0.3s;
+  }
+  .show-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .close-btn .collapser::after {
+    top: 0;
+    transform: rotate(-45deg);
+    background: black;
+  }
+  .close-btn .collapser::before {
+    background: black;
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .close-btn .collapser {
+    height: 0;
+  }
+  .home__title-1,
+  .home__title-2 {
+    font-size: var(--32px);
+    text-align: start;
+    line-height: 38px;
+  }
+  .home__title-2 {
+    margin-bottom: 1rem;
+  }
+  .home__sub {
+    position: static;
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+  .home__button {
+    text-align: start;
+    margin-left: 1rem;
+  }
+  .title {
+    font-size: var(--24px);
+    line-height: 32px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    padding-top: 0;
+  }
+  .big__num,
+  .plus {
+    font-size: 40px;
+    line-height: 150%;
+  }
+  .rot {
+    transform: rotate(-10deg);
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    border-radius: 500px;
+    padding: 1rem 0 1rem 1rem;
+    margin-right: -10px;
+  }
+  .rot-rev {
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    border-radius: 500px;
+    transform: rotate(10deg);
+    padding: 1rem 0rem 1rem 1rem;
+    margin-left: -10px;
+  }
+  .cir {
+    margin-top: -10px;
+    height: 190px;
+    width: 190px;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .num__txt {
+    font-size: 14px;
+    text-align: center;
+    max-width: 90%;
+  }
+  .about__right,
+  .heart {
+    margin-bottom: 56px;
+  }
+  .about__right {
+    order: 0;
+  }
+  .about-pic {
+    order: 1;
+  }
+  .heart {
+    order: 2;
+  }
+  .about-img {
+    border-radius: 0px 144px 0px 0px;
+    height: 272px;
+    margin-top: 0;
+  }
+  .line-btn {
+    background: transparent;
+    border: none;
+    color: var(--orange);
+    width: initial;
+    height: initial;
+    justify-content: start;
+    gap: 1rem;
+  }
+  .line-btn img {
+    display: block;
+  }
+  .full__input {
+    margin-bottom: 2rem;
+  }
+
+  .anime--btn::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home__btn {
+    width: initial !important;
+    height: initial !important;
+  }
+  :root {
+    --18px: 14px;
+    --20px: 20px;
+    --22px: 22px;
+    --24px: 24px;
+    --32px: 32px;
+  }
+  .home {
+    padding: 130px 0 32px 0;
+    position: relative;
+    height: 530px;
+  }
+  .home::after {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.5858718487394958) 35%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .brand__pic {
+    width: 100px !important;
+  }
+  .nav__brand {
+    padding: 16px 0;
+    width: 40% !important;
+  }
+  .num {
+    width: 50% !important;
+    text-align: end;
+  }
+  .num a {
+    font-size: 14px;
+  }
+  .home__video {
+    /* height: 300px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .home__left {
+    z-index: 9999;
+    color: white;
+  }
+  .nav {
+    padding-top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+  }
+  .home__btn {
+    width: 130px;
+    height: 130px;
+    font-size: var(--18px);
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .abs__btn {
+    width: 130px;
+    height: 130px;
+    font-size: var(--18px);
+    font-weight: 600;
+    line-height: 150%;
+    position: absolute;
+    top: 120%;
+  }
+  .lil__title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .about__txt {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .about__word,
+  .about__author {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about__word {
+    font-size: var(--20px);
+    margin-bottom: 1rem;
+    line-height: 32px;
+  }
+  .about__author {
+    margin-bottom: 3rem;
+  }
+  .about__pic {
+    height: 300px;
+  }
+  .about {
+    padding-bottom: 64px;
+  }
+  .facts,
+  .services,
+  .projekt,
+  .advantages,
+  .object {
+    padding: 56px 0;
+  }
+  /* .fax__item {
+    gap: 38px;
+    padding: 20px 0;
+  } */
+  .item__content,
+  .item__num,
+  .serv__txt,
+  .projekt__content p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pad__title {
+    padding-left: 10px !important;
+  }
+  .serv__item {
+    padding: 1rem !important;
+    border-left: none;
+    border-top: 1px solid #8686862d;
+  }
+  .serv__item:last-child {
+    border-right: none;
+    border-bottom: 1px solid #8686862d;
+  }
+  .projetk__grid {
+    display: block;
+  }
+  .projekt__item:nth-child(1n),
+  .projekt__item:nth-child(2n),
+  .projekt__item:nth-child(3n) {
+    width: 100%;
+  }
+  .projekt__img {
+    height: 240px;
+  }
+  .projekt__item {
+    padding-top: 0;
+  }
+  .adv__items {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .adv__item {
+    height: 280px;
+    width: 280px;
+    margin-right: 0 !important;
+  }
+  .adv__txt {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+  .adv__sup {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .btns {
+    position: static;
+    justify-content: center;
+  }
+  .swiper-slide-active .object__img,
+  .object__img {
+    height: 250px;
+  }
+  .object {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+  .objectSwiper {
+    height: 100%;
+    padding-top: 0 !important;
+  }
+  .part__pic {
+    width: 230px;
+    height: 230px;
+  }
+  .partnersSwiper {
+    height: 100%;
+  }
+  .partners {
+    padding-bottom: 56px;
+  }
+  .person {
+    height: 50px;
+    width: 50px;
+  }
+  .company__logo {
+    display: none;
+  }
+  .slide__txt,
+  .name,
+  .status {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .reviews__slide {
+    height: initial !important;
+  }
+  .footer {
+    font-size: 14px !important;
+  }
+  .links__wrapper {
+    margin-top: 40px !important;
+    width: 30% !important;
+  }
+  .add__wrapper {
+    width: 70% !important;
+    margin-top: 40px !important;
+  }
+  .foot__liltitle {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+  .form__right {
+    justify-content: center;
+  }
+  .form__wrapper {
+    background: transparent;
+    padding: 0;
+  }
+  .form__txt {
+    max-width: 100%;
+  }
+  .con__title {
+    margin-bottom: 24px !important;
+  }
+  .half__input {
+    width: 100%;
+  }
+  .form__flexer {
+    flex-direction: column;
+    gap: 0;
+  }
+  .big__num,
+  .plus {
+    font-size: var(--32px);
+  }
+  .footer__brand img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cir {
+    width: 170px;
+    height: 170px;
+  }
+}
